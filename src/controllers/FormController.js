@@ -35,6 +35,16 @@ class FormController {
       return res.status(500).send(error.message);
     }
   }
+
+  // lista todos os concorrentes
+  static async listaConcorrentes(req, res) {
+    try {
+      const todosOsConcorrentes = await database.Concorrentes.findAll();
+      return res.status(200).json(todosOsConcorrentes);
+    } catch (error) {
+      return res.status(500).json(error.message);
+    }
+  }
 }
 
 module.exports = FormController;

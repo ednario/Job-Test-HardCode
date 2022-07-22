@@ -10,6 +10,7 @@ router
   .get('/', (req, res) => {
     res.render('formulario');
   })
-  .post('/add', FormController.addConcorrente);
+  .post('/add', FormController.addConcorrente)
+  .get('/concorrentes', FormController.listaConcorrentes);
 
 module.exports = router;
