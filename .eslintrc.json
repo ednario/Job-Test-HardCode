@@ -17,6 +17,7 @@
       "import/no-dynamic-require":"off",
       "no-unused-vars":"off",
       "no-unused-expressions":"off",
-      "import/no-unresolved":"off"
+      "import/no-unresolved":"off",
+      "import/extensions":"off"
   }
 } 
