@@ -30,7 +30,7 @@ class FormController {
           possui_empresa_aberta: req.body.possui_empresa_aberta,
         },
       );
-      return res.status(200).send('Obrigado por participar da nossa seleção');
+      return res.status(200).redirect('/');
     } catch (error) {
       return res.status(500).send(error.message);
     }
