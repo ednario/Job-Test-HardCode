@@ -1,4 +1,4 @@
-const formRoutes = require('./formRoutes');
+const formRoutes = require('./formRoutes.js');
 
 module.exports = (app) => {
   app.use(

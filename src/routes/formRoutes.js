@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const FormController = require('../controllers/formController');
+const FormController = require('../controllers/formController.js');
 
 const router = express.Router();
 
