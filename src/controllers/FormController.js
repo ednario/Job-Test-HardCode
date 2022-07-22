@@ -4,7 +4,7 @@ class FormController {
   // Adiciona dados ao banco
   static async addConcorrente(req, res) {
     try {
-      await database.concorrentes.create(
+      await database.Concorrentes.create(
         {
           nome: req.body.nome,
           email: req.body.email,
